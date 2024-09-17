@@ -23,3 +23,35 @@ psql -U postgres
 CREATE DATABASE online_store;
 \c online_store;
 ```
+### 3. Write the SQL Query to Create the Table
+#### My tables:
+##### Customers:
+```sql
+CREATE TABLE "Customers" (
+    "CustomerID" SERIAL PRIMARY KEY,
+    "Name" VARCHAR(100) NOT NULL,
+    "Email" VARCHAR(100) UNIQUE NOT NULL,
+    "Address" TEXT,
+    "Phone" VARCHAR(15)
+```
+##### Orders:
+```sql
+CREATE TABLE "Orders" (
+    "OrderID" SERIAL PRIMARY KEY,
+    "OrderDate" DATE DEFAULT CURRENT_DATE,
+    "TotalAmount" DECIMAL(10, 2) NOT NULL,
+    "CustomerID" INTEGER NOT NULL,
+    FOREIGN KEY ("CustomerID") REFERENCES "Customers"("CustomerID") ON DELETE CASCADE
+);
+```
+##### order Details:
+```sql
+CREATE TABLE "OrderDetails" (
+    "OrderDetailID" SERIAL PRIMARY KEY,
+    "OrderID" INTEGER NOT NULL,
+    "ProductID" INTEGER NOT NULL,
+    "Quantity" INTEGER NOT NULL,
+    FOREIGN KEY ("OrderID") REFERENCES "Orders"("OrderID") ON DELETE CASCADE,
+    FOREIGN KEY ("ProductID") REFERENCES "Products"("ProductID") ON DELETE CASCADE
+);
+```
