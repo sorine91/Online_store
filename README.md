@@ -8,16 +8,18 @@
 
 ---
 
-## Historique des Commandes et Explications
+# Command History and Explanations
 
-Cette section décrit les commandes utilisées pour configurer la base de données `online_store` dans PostgreSQL via LibreOffice Base.
+This section describes the commands used to configure the online_store database in PostgreSQL via LibreOffice Base.
 
-### 1. Connexion à PostgreSQL
+### 1. Connect to PostgreSQL 
 Pour se connecter à PostgreSQL en tant qu'utilisateur `postgres`, utilisez la commande suivante dans le terminal :
-```bash
-psql -U postgre
+```msdos
+psql -U postgres 
+```
 
-### 2.Créer une Base de Données et Se Connecter
-Créez une base de données et connectez-vous :
+### 2. Create database and connect (always as the `postgres` user)
+```sql
 CREATE DATABASE online_store;
 \c online_store;
+```
