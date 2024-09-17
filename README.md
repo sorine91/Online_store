@@ -55,3 +55,24 @@ CREATE TABLE "OrderDetails" (
     FOREIGN KEY ("ProductID") REFERENCES "Products"("ProductID") ON DELETE CASCADE
 );
 ```
+##### Payments:
+```sql
+CREATE TABLE "Payments" (
+    "PaymentID" SERIAL PRIMARY KEY,
+    "PaymentDate" DATE DEFAULT CURRENT_DATE,
+    "Amount" DECIMAL(10, 2) NOT NULL,
+    "OrderID" INTEGER NOT NULL,
+    FOREIGN KEY ("OrderID") REFERENCES "Orders"("OrderID") ON DELETE CASCADE
+);
+```
+##### Products:
+```sql
+CREATE TABLE "Products" (
+    "ProductID" SERIAL PRIMARY KEY,
+    "Name" VARCHAR(100) NOT NULL,
+    "Price" DECIMAL(10, 2) NOT NULL,
+    "Stock" INTEGER,
+    "Description" TEXT
+);
+```
+
