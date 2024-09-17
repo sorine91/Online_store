@@ -181,7 +181,7 @@ JOIN "Orders" ON "Payments"."OrderID" = "Orders"."OrderID";
 ##### screenshot:
 <img width="457" alt="image" src="https://github.com/user-attachments/assets/4bc349a9-c87d-4309-9f9b-92ff814a07b1">
 
-#### Customers Numer of Order:
+#### Customers Number of Order:
 ```sql
 SELECT "Customers"."Name" AS "CustomerName", COUNT("Orders"."OrderID") AS "NumberOfOrders"
 FROM "Customers"
