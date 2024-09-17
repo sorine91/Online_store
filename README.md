@@ -127,3 +127,22 @@ VALUES
     ('Monitor', 300.00, 20, '27-inch 4K monitor');
 
 ```
+### View the tables:
+#### Customers:
+<img width="438" alt="image" src="https://github.com/user-attachments/assets/173b59c0-7d19-47ef-8127-3919ed3e946d">
+
+#### Order:
+<img width="319" alt="image" src="https://github.com/user-attachments/assets/df70f47e-c7ec-4739-8dc7-3a61eeb81fb7">
+
+
+#### Order Details:
+<img width="328" alt="image" src="https://github.com/user-attachments/assets/5a698d90-cf32-4191-a29b-9426aa67037f">
+
+#### Products:
+<img width="341" alt="image" src="https://github.com/user-attachments/assets/989c7ba0-8217-49c6-bada-5a10e087330a">
+
+
+#### Payments:
+<img width="350" alt="image" src="https://github.com/user-attachments/assets/b504a9a8-760d-40d3-8edb-d5707854a528">
+
+
