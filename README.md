@@ -1,7 +1,7 @@
 # Online Store PostgreSQL - Sorine Lachichi
 
 
-## Diagramme
+## Diagram
 ![Main](https://github.com/user-attachments/assets/0cc05981-a163-41d1-8a59-c2534f6739ec)
 
 
