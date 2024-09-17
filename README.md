@@ -3,7 +3,7 @@
 
 ## Diagramme
 
-![Diagramme]("Main.png")
+![Diagramme]("https://github.com/sorine91/Online_store/blob/394b8ea96cf5d47d0148c3c05c5cd37c64ef2cce/Main.png")
 
 ---
 
