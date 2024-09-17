@@ -16,3 +16,8 @@ Cette section décrit les commandes utilisées pour configurer la base de donné
 Pour se connecter à PostgreSQL en tant qu'utilisateur `postgres`, utilisez la commande suivante dans le terminal :
 ```bash
 psql -U postgre
+
+### 2.Créer une Base de Données et Se Connecter
+Créez une base de données et connectez-vous :
+CREATE DATABASE online_store;
+\c online_store;
