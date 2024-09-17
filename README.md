@@ -13,7 +13,7 @@
 This section describes the commands used to configure the online_store database in PostgreSQL via LibreOffice Base.
 
 ### 1. Connect to PostgreSQL 
-Pour se connecter à PostgreSQL en tant qu'utilisateur `postgres`, utilisez la commande suivante dans le terminal :
+To connect to PostgreSQL as the postgres user, use the following command in the terminal::
 ```msdos
 psql -U postgres 
 ```
