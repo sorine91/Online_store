@@ -1,16 +1,17 @@
-# Online_store
+# Online Store PostgreSQL - Sorine Lachichi
+## _Mis à jour le 17/09/2024_
 
-# LibreOffice Base Database Project
+## Diagramme
 
+![Diagramme]("C:\Users\sorin\OneDrive\Documents\Croatie\DataBase\Main.png")
 
-## Description
+---
 
-Ce projet contient un modèle de base de données pour un magasin en ligne, créé avec LibreOffice Base et PostgreSQL. Il inclut les étapes pour créer les tables, insérer des données et effectuer des requêtes.
+## Historique des Commandes et Explications
 
-## Liste des Commandes Exécutées pour la Configuration de la Base de Données
+Cette section décrit les commandes utilisées pour configurer la base de données `online_store` dans PostgreSQL via LibreOffice Base.
 
 ### 1. Connexion à PostgreSQL
-
-Connectez-vous à PostgreSQL en tant qu'utilisateur `postgres` :
-```sh
-psql -U postgres
+Pour se connecter à PostgreSQL en tant qu'utilisateur `postgres`, utilisez la commande suivante dans le terminal :
+```bash
+psql -U postgre
