@@ -2,8 +2,9 @@
 ## _Mis à jour le 17/09/2024_
 
 ## Diagramme
+![Main](https://github.com/user-attachments/assets/0cc05981-a163-41d1-8a59-c2534f6739ec)
 
-![Diagramme]("https://github.com/sorine91/Online_store/blob/394b8ea96cf5d47d0148c3c05c5cd37c64ef2cce/Main.png")
+
 
 ---
 
