@@ -145,4 +145,51 @@ VALUES
 #### Payments:
 <img width="350" alt="image" src="https://github.com/user-attachments/assets/b504a9a8-760d-40d3-8edb-d5707854a528">
 
+### 7. Some simple Queries:
+#### Stock Product:
+```sql
+SELECT "Name", "Stock"
+FROM "Products";
+```
+##### screenshot:
+<img width="266" alt="image" src="https://github.com/user-attachments/assets/94650024-6194-49f8-8df3-c29b0908f606">
+
+#### Product quantities for specific order:
+```sql
+SELECT "Products"."Name", "OrderDetails"."Quantity"
+FROM "OrderDetails"
+JOIN "Products" ON "OrderDetails"."ProductID" = "Products"."ProductID"
+WHERE "OrderDetails"."OrderID" = 1;
+```
+##### screenshot:
+<img width="445" alt="image" src="https://github.com/user-attachments/assets/89c004ad-3f7f-402d-a652-3e93d104dd8b">
+
+#### Product list with description:
+```sql
+SELECT "Name", "Description"
+FROM "Products";
+```
+##### screenshot:
+<img width="385" alt="image" src="https://github.com/user-attachments/assets/e6395f30-7d39-4732-9dc0-9948e00368a9">
+
+#### Payment Details and Associated Orders:
+```sql
+SELECT "Payments"."PaymentDate", "Payments"."Amount", "Orders"."OrderID"
+FROM "Payments"
+JOIN "Orders" ON "Payments"."OrderID" = "Orders"."OrderID";
+```
+##### screenshot:
+<img width="457" alt="image" src="https://github.com/user-attachments/assets/4bc349a9-c87d-4309-9f9b-92ff814a07b1">
+
+#### Customers Numer of Order:
+```sql
+SELECT "Customers"."Name" AS "CustomerName", COUNT("Orders"."OrderID") AS "NumberOfOrders"
+FROM "Customers"
+LEFT JOIN "Orders" ON "Customers"."CustomerID" = "Orders"."CustomerID"
+GROUP BY "Customers"."CustomerID"
+ORDER BY "NumberOfOrders" DESC;
+```
+##### screenshot:
+<img width="589" alt="image" src="https://github.com/user-attachments/assets/d5f2788e-29b4-4e7a-971f-0a7e849c01fc">
+
 
