@@ -3,7 +3,7 @@
 
 ## Diagramme
 
-![Diagramme]("C:\Users\sorin\OneDrive\Documents\Croatie\DataBase\Main.png")
+![Diagramme]("Main.png")
 
 ---
 
