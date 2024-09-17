@@ -75,4 +75,11 @@ CREATE TABLE "Products" (
     "Description" TEXT
 );
 ```
+### 4. Execute the SQL Query
+Click on "Run" (the icon representing a play button or a similar button) to execute the SQL query.
+If the query is executed correctly, the table will be created in your database.
 
+### 5. Verify the Table Creation
+In the left navigation pane, click on "Tables" to check that the new table appears in the list of tables.
+
+### 6. Add Data
