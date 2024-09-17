@@ -1,5 +1,5 @@
 # Online Store PostgreSQL - Sorine Lachichi
-## _Mis à jour le 17/09/2024_
+
 
 ## Diagramme
 ![Main](https://github.com/user-attachments/assets/0cc05981-a163-41d1-8a59-c2534f6739ec)
