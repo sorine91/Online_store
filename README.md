@@ -83,3 +83,47 @@ If the query is executed correctly, the table will be created in your database.
 In the left navigation pane, click on "Tables" to check that the new table appears in the list of tables.
 
 ### 6. Add Data
+#### My DATA:
+##### Customers:
+```sql
+INSERT INTO "Customers" ("Name", "Email", "Address", "Phone")
+VALUES
+    ('Theo Johnson', 'theo.johnson@example.com', '123 Pine Road', '555-6789'),
+    ('Amine Karim', 'amine.karim@example.com', '456 Cedar Street', '555-9876'),
+    ('Marvine Lee', 'marvine.lee@example.com', '789 Birch Avenue', '555-5432');
+```
+
+##### Order:
+```sql
+INSERT INTO "Orders" ("OrderDate", "TotalAmount", "CustomerID")
+VALUES
+    ('2024-09-15', 1200.00, 1), 
+    ('2024-09-16', 800.00, 2),   
+    ('2024-09-17', 150.00, 3);   
+```
+##### Order Details:
+```sql
+INSERT INTO "OrderDetails" ("OrderID", "ProductID", "Quantity")
+VALUES
+    (1, 1, 1),  
+    (2, 2, 1),  
+    (3, 3, 1);
+```
+##### Payments:
+```sql
+INSERT INTO "Payments" ("PaymentDate", "Amount", "OrderID")
+VALUES
+    ('2024-09-16', 1200.00, 1),  
+    ('2024-09-17', 800.00, 2),  
+    ('2024-09-18', 150.00, 3);
+```
+##### Product:
+```sql
+INSERT INTO "Products" ("Name", "Price", "Stock", "Description")
+VALUES
+    ('Laptop', 1200.00, 15, 'High-performance laptop with 16GB RAM'),
+    ('Smartphone', 800.00, 30, 'Latest model smartphone with 128GB storage'),
+    ('Headphones', 150.00, 50, 'Noise-cancelling over-ear headphones'),
+    ('Monitor', 300.00, 20, '27-inch 4K monitor');
+
+```
